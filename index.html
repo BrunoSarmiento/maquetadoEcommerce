@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon.png">
-    <!---<link rel="stylesheet" href="styles/style.css">--->
+    <!--BOOSTRAP-->
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="styles/style.css">-->
     <link rel="stylesheet" href="styles/estilos.css">
     <link
     rel="stylesheet"
@@ -12,60 +14,120 @@
     />
     <title>US UrbanSport</title>
 </head>
-<body id="gridAreas">
-    <header id="menu" >
-        <ul class="menuFlex">
-            <a href="index.html"><li>Inicio</li></a>
-            <a href="pages/mujer.html"><li>Mujer</li></a>
-            <a href="pages/hombre.html"><li>Hombre</li></a>
-            <a href="pages/ninio.html"><li>Niño</li></a>
-            <a href="pages/contacto.html"><li>Contacto</li></a>
-        </ul>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">US</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorias
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="pages/mujer.html">Mujer</a></li>
+                      <li><a class="dropdown-item" href="pages/hombre.html">Hombre</a></li>
+                      <li><a class="dropdown-item" href="pages/ninio.html">Niños</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <section class="animate__animated animate__backInLeft animate__delay-0s" class="marcasFlex" id="marcas" >
-        <h2>Navegar por marcas</h2>
+    <section>
 
-        <section class="destacadoImg">
-            <a href="pages/nike.html"><img src="assets/img/logonike.png"
-                alt="Logo nike"></a>
-            <a href="pages/adidas.html"><img src="assets/img/logoadidasoriginals.png"
-                alt="Logo adidas"></a>
-            <a href="pages/fila.html"><img src="assets/img/fila.png"
-                alt="Logo fila"></a>
-            <a href="pages/converse.html"><img src="assets/img/converse.png"
-                alt="Logo converse"></a>
-            <a href="pages/reebok.html"><img src="assets/img/logoreebok2.png"
-                alt="Logo reebook"></a>
-        </section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="pages/nike.html">
+                    <img src="assets/img/logonike.png" class="d-block w-100" alt="Logo nike"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="pages/adidas.html">
+                    <img src="assets/img/logoadidasoriginals.png" class="d-block w-100" alt="Logo adidas"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="pages/fila.html">
+                    <img src="assets/img/fila.png" class="d-block w-100" alt="Logo fila"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="pages/converse.html">
+                    <img src="assets/img/converse.png" class="d-block w-100" alt="Logo converse"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="pages/reebok.html">
+                    <img src="assets/img/logoreebok2.png" class="d-block w-100" alt="Logo reebook"></a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         
     </section>
     
-    <section class="border destacadoFlex" id="destacados">
+    <section class="container-fluid">
         <h2>Destacados</h2>
-        <section class="destacadoImg">
-            <section class="animate__animated animate__pulse animate__delay-2s animate__repeat-2">
-                <a href="pages/producto1.html"><img  class="tamImg" src="assets/img/zap1_0.jpg"
-                    alt="Vista lateral derecha de zapatilla "></a>
-                <h3>Zapatillas Reebok FlashFilm Train 2.0</h3>
-            </section>
-            <section class="animate__animated animate__pulse animate__delay-2s animate__repeat-2">
-                <a href="pages/producto1.html"><img class="tamImg" src="assets/img/zap1_0.jpg"
-                    alt="Vista lateral derecha de zapatilla "></a>
-                <h3>Zapatillas Reebok FlashFilm Train 2.0</h3>
-            </section>
-            <section class="animate__animated animate__pulse animate__delay-2s animate__repeat-2">
-                <a href="pages/producto1.html"><img class="tamImg" src="assets/img/zap1_0.jpg"
-                    alt="Vista lateral derecha de zapatilla "></a>
-                <h3>Zapatillas Reebok FlashFilm Train 2.0</h3>
-            </section>
-        </section>
-        
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12 col-md my-2">
+                  <div class="card">
+                      <img src="assets/img/zap1_0.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Zapatillas Reebok FlashFilm Train 2.0</h5>
+                        <a href="pages/producto1.html" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md my-2">
+                  <div class="card" >
+                      <img src="assets/img/zap1_0.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Zapatillas Reebok FlashFilm Train 2.0</h5>
+                        <a href="pages/producto1.html" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md my-2">
+                  <div class="card">
+                      <img src="assets/img/zap1_0.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Zapatillas Reebok FlashFilm Train 2.0</h5>
+                        <a href="pages/producto1.html" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
         
-    <section class="categoriaFlex" id="categorias">
+    <section class="container-fluid">
         <h2>Categorias</h2>
-        <section class="destacadoImg">
+        <section class="destacadoImg" >
             <a href="pages/mujer.html"><img class="tamImg" src="assets/img/mujer.jpg"
                 alt="Mujer"></a>
             <a href="pages/hombre.html"><img class="tamImg" src="assets/img/hombre.jpg"
@@ -77,10 +139,12 @@
     </section>
 
     <footer class="footFlex">
-        <h3>Logo</h3>
-        <h3>Info</h3>
-        <h3>Atención al cliente</h3>
-        <h3>Seguinos en nuestras redes</h3>
+        <h3 class="container-fluid">Logo</h3>
+        <h3 class="container-fluid">Info</h3>
+        <h3 class="container-fluid">Atención al cliente</h3>
+        <h3 class="container-fluid">Seguinos en nuestras redes</h3>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
