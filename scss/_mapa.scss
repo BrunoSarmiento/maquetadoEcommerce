@@ -1,0 +1,13 @@
+$colores:(
+    /* clave:  valor*/
+        mujer:   #02e0bf,
+        hombre:  #076355,
+        ninio:    #058f55,
+    );
+    
+@each $nombre, $color in $colores {
+    .body-#{$nombre} {
+        background-color: $color;
+        border: $color;
+    }
+ }

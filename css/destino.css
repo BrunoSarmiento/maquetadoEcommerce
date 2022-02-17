@@ -43,6 +43,36 @@
     width: 250px;
     height: 250px; } }
 
+.body-mujer {
+  background-color: #02e0bf;
+  border: #02e0bf; }
+
+.body-hombre {
+  background-color: #076355;
+  border: #076355; }
+
+.body-ninio {
+  background-color: #058f55;
+  border: #058f55; }
+
+/* EXTENDS */
+.titulos, .titulo-dos {
+  border: 1px #00201c;
+  background-color: #0bbb80;
+  padding: 10px; }
+
+.titulo-dos {
+  background-color: #7ef1e0; }
+
+/* MIXINS*/
+.tamImg {
+  width: 350px;
+  height: 350px; }
+
+.tamImgPro {
+  width: 450px;
+  height: 450px; }
+
 body {
   width: 100%;
   height: 100vh;

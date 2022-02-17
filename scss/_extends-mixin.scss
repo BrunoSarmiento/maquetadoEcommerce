@@ -1,0 +1,26 @@
+$anchura: 400px;
+$altura: 400px;
+
+/* EXTENDS */
+.titulos {
+    border: 1px #00201c;
+    background-color: #0bbb80;
+    padding: 10px;
+}
+.titulo-dos {
+    @extend .titulos;
+    background-color: #7ef1e0;
+}
+
+/* MIXINS*/
+@mixin tamanio($anchura, $altura) {
+    width: $anchura;
+    height: $altura;
+ }
+.tamImg{
+    @include tamanio(350px, 350px);
+}
+
+.tamImgPro{
+    @include tamanio(450px, 450px);
+}
